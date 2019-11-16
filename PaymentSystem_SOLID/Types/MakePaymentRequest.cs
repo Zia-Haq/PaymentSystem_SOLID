@@ -1,0 +1,18 @@
+﻿using System;
+
+namespace PaymentSystem.Types
+{
+    public class MakePaymentRequest
+    {
+        public string CreditorAccountNumber { get; set; }
+
+        public string DebtorAccountNumber { get; set; }
+
+        public decimal Amount { get; set; }
+
+        public DateTime PaymentDate { get; set; }
+
+        public Enum PaymentScheme { get; set; } //changed to Enum to support future schmeses
+
+    }
+}
